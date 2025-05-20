@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jyothi Supriya Chollangi | Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+</head>
+<body>
+  <!-- Hero Section with BG image -->
+  <section class="hero">
+    <img src="C:\Users\choll\OneDrive\Desktop\Riyacode\Interview_Projects\My-Portfolio\images\Image.jpg" alt="Pastel Background" class="hero-bg">
+    <div class="hero-content">
+      <h1>Jyothi Supriya Chollangi</h1>
+      <h2>Data Science Enthusiast | Researcher | Data Analyst</h2>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/jyothi-supriya-chollangi-6b2437211/" class="icon-linkedin" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/JyothiSupriya" class="icon-github" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="mailto:chollangijyothisupriya@gmail.com" class="icon-email" title="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+      <div class="hero-contact">
+        <span><i class="fas fa-phone"></i> +1 (409) 659-2546</span>
+        <span> | United States</span>
+      </div>
+    </div>
+  </section>
+
+  <nav class="main-nav">
+    <a href="#about">About Me</a>
+    <a href="#experience" onclick="toggleSection('experience')">Experience</a>
+    <a href="#projects" onclick="toggleSection('projects')">Projects</a>
+    <a href="#publications" onclick="toggleSection('publications')">Publications</a>
+    <a href="#skills" onclick="toggleSection('skills')">Skills</a>
+    <a href="#education" onclick="toggleSection('education')">Education</a>
+  </nav>
+
+  <main>
+    <!-- About Section -->
+    <section id="about" class="container about-section">
+      <h2>About Me</h2>
+      <p>
+        I’m an enthusiastic Data Scientist with 3+ years of hands-on experience in delivering impactful solutions across industry and academic research. My journey spans advanced work in LLM-driven data retrieval, zero-shot classification, and end-to-end analytics—from building scalable pipelines at Tata Consultancy Services to pioneering semantic search and automation for 100,000+ unstructured records as a Research Assistant at Lamar University.
+        <br><br>
+        I thrive on transforming complex data challenges into actionable insights, using tools like Python, SQL, and state-of-the-art machine learning frameworks. I love collaborating with diverse teams and empowering non-technical stakeholders through intuitive data solutions. My favorite moments are when curiosity meets innovation—whether that’s automating a repetitive workflow, visualizing results for business decisions, or testing the limits of AI-driven classification.
+        <br><br>
+        I’m excited about tackling new challenges and growing in roles where my passion for data science, statistical modeling, and problem-solving can make a real difference. Let’s connect if you’re seeking someone who brings not just technical expertise, but energy and genuine excitement to your team!
+      </p>  
+      <div class="about-img">
+        <img src="C:\Users\choll\OneDrive\Desktop\Riyacode\Interview_Projects\My-Portfolio\images\Image 2.jpg" alt="Jyothi Supriya Chollangi">
+      </div>
+    </section>
+
+    <!-- Experience Section (Accordion) -->
+    <section id="experience" class="container collapsible closed">
+      <button class="collapsible-header pastel-blue" onclick="toggleSection('experience')">
+        <i class="fas fa-briefcase"></i> Professional Experience <span class="toggle-arrow"></span>
+      </button>
+      <div class="collapsible-content">
+        <div class="job">
+          <h3>Research Assistant, Lamar University – Beaumont, TX <span class="job-date">Jan 2024 - May 2025</span></h3>
+          <ul>
+            <li>Collaborated with Dr. Curry’s Industrial Engineering team to architect and implement an LLM-powered information retrieval system for 100,000+ unstructured U.S. maritime incident reports.</li>
+            <li>Reduced query turnaround from hours to seconds and cut manual lookup effort by 70% by engineering a RAG pipeline: converted Excel data into a SQLite database, authored zero-shot prompts to translate natural-language queries into validated SQL using locally hosted models, and automated result summarization.</li>
+            <li>Achieved 92% precision in internal benchmarks by developing a LangChain semantic-search agent with HuggingFace embeddings and ChromaDB, and building custom tools for file overview, similarity retrieval, and summarization.</li>
+            <li>Empowered non-technical stakeholders to query and download summaries through a Gradio app with multi-format ingestion (XLSX, CSV, PDF, DOCX, TXT), OCR/text extraction, and vector indexing.</li>
+          </ul>
+        </div>
+        <div class="job">
+          <h3>Data Analyst, Tata Consultancy Services – Hyderabad, India <span class="job-date">Mar 2021 – Sep 2023</span></h3>
+          <ul>
+            <li>Managed and resolved over 150 data‐related incidents and service requests per month via ServiceNow, consistently meeting SLA targets 95% of the time.</li>
+            <li>Authored and optimized complex SQL queries for data extraction and transformation, reducing average query runtime by 30% and accelerating downstream analytics workflows.</li>
+            <li>Automated reporting with advanced Excel (pivot tables, VLOOKUP, etc.), delivering weekly dashboards that improved SLA compliance metrics by 15% and enabled faster decision‐making.</li>
+            <li>Troubleshot and supported internal teams on data‐integrity issues and validated SOAP/REST APIs with SoapUI—diagnosing anomalies, implementing corrective actions, and reducing API errors by 40%—while crafting clear charts and presentations that empowered stakeholders and enhanced overall data accuracy by 25%.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section (Accordion) -->
+    <section id="projects" class="container collapsible closed">
+      <button class="collapsible-header pastel-pink" onclick="toggleSection('projects')">
+        <i class="fas fa-lightbulb"></i> Academic Projects <span class="toggle-arrow"></span>
+      </button>
+      <div class="collapsible-content">
+        <div class="project">
+          <h3>Thesis Project: Maritime Safety Classification Using Large Language Models</h3>
+          <ul>
+            <li>Developed a zero-shot text-classification framework in Python & Ollama CLI, processing 100 sampled near-miss narratives across 50 safety topics (5,000 decisions) and reducing manual annotation effort by 70%.</li>
+            <li>Engineered end-to-end data pipelines with pandas & Hugging Face Transformers: invoked nine locally hosted LLMs three times per record, parsed outputs into standardized Yes/No labels, and managed storage for downstream analysis.</li>
+            <li>Performed statistical benchmarking (confusion matrices, precision/recall, F₁, Cohen’s κ, McNemar’s) to identify LLaMA 70B (κ = 0.625, F₁ = 0.81) as top performer, visualized results with Matplotlib, and partnered with Dr. Curry to align analyses with maritime safety standards for future LLM fine-tuning.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Publications Section (Accordion) -->
+    <section id="publications" class="container collapsible closed">
+      <button class="collapsible-header pastel-green" onclick="toggleSection('publications')">
+        <i class="fas fa-book"></i> Publications <span class="toggle-arrow"></span>
+      </button>
+      <div class="collapsible-content">
+        <ul>
+          <li>
+            Gubbala, S. S., Chollangi, J. S., Li, Y., & Curry, J. (2025). 
+            <em>A Topic Modeling Comparison Between LDA, NMF, Top2Vec and BERTopic in Determining the Contributing Factors for Pipeline Incidents.</em> 
+            Safety Science. (Manuscript under review).
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Skills Section with Icons (Accordion) -->
+    <section id="skills" class="container collapsible closed">
+      <button class="collapsible-header pastel-purple" onclick="toggleSection('skills')">
+        <i class="fas fa-laptop-code"></i> Skills <span class="toggle-arrow"></span>
+      </button>
+      <div class="collapsible-content skills-flex">
+        <div class="skill-card pastel-blue"><i class="fab fa-python"></i> Python</div>
+        <div class="skill-card pastel-pink"><i class="fas fa-database"></i> SQL</div>
+        <div class="skill-card pastel-green"><i class="fab fa-r-project"></i> R</div>
+        <div class="skill-card pastel-purple"><i class="fab fa-github"></i> Git & GitHub</div>
+        <div class="skill-card pastel-blue"><i class="fas fa-robot"></i> Machine Learning</div>
+        <div class="skill-card pastel-pink"><i class="fas fa-project-diagram"></i> Pandas</div>
+        <div class="skill-card pastel-green"><i class="fas fa-chart-bar"></i> Data Visualization</div>
+        <div class="skill-card pastel-purple"><i class="fas fa-cloud"></i> AWS</div>
+        <div class="skill-card pastel-blue"><i class="fab fa-docker"></i> Docker</div>
+        <div class="skill-card pastel-pink"><i class="fas fa-brain"></i> Deep Learning</div>
+        <!-- Add more skills if you want -->
+      </div>
+    </section>
+
+    <!-- Education Section (Accordion) -->
+    <section id="education" class="container collapsible closed">
+      <button class="collapsible-header pastel-orange" onclick="toggleSection('education')">
+        <i class="fas fa-graduation-cap"></i> Education <span class="toggle-arrow"></span>
+      </button>
+      <div class="collapsible-content">
+        <ul>
+          <li>
+            <strong>Master of Science in Industrial Engineering</strong>, Lamar University, Beaumont, TX &mdash; GPA: 4/4 <br/>
+            <span class="edu-date">May 2025</span>
+          </li>
+          <li>
+            <strong>Bachelor’s in Computer Science Engineering</strong>, Aditya College of Engineering, India &mdash; PER: 70% <br/>
+            <span class="edu-date">May 2019</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      &copy; 2025 Jyothi Supriya Chollangi. All rights reserved.
+    </div>
+  </footer>
+  <script>
+    // Accordion functionality
+    function toggleSection(id) {
+      document.querySelectorAll('.collapsible').forEach(section => {
+        if (section.id === id) {
+          section.classList.toggle('closed');
+        } else {
+          section.classList.add('closed');
+        }
+      });
+    }
+  </script>
+</body>
+</html>
