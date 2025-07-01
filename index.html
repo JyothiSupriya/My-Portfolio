@@ -11,12 +11,12 @@
 <body>
   <!-- Hero Section with BG image -->
   <section class="hero">
-    <img src="images\Image 1.jpg" alt="Pastel Background" class="hero-bg">
+    <img src="images/Image 1.jpg" alt="Pastel Background" class="hero-bg">
     <div class="hero-content">
       <h1>Jyothi Supriya Chollangi</h1>
-      <h2>Data Science Enthusiast | Researcher | Data Analyst</h2>
+      <h2>Data Scientist</h2>
       <div class="social-icons">
-        <a href="https://www.linkedin.com/in/jyothi-supriya-chollangi-6b2437211/" class="icon-linkedin" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.linkedin.com/in/jyothi-supriya-chollangi/" class="icon-linkedin" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
         <a href="https://github.com/JyothiSupriya" class="icon-github" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
         <a href="mailto:chollangijyothisupriya@gmail.com" class="icon-email" title="Email"><i class="fas fa-envelope"></i></a>
       </div>
@@ -32,6 +32,7 @@
     <a href="#experience" onclick="toggleSection('experience')">Experience</a>
     <a href="#projects" onclick="toggleSection('projects')">Projects</a>
     <a href="#publications" onclick="toggleSection('publications')">Publications</a>
+    <a href="#certifications" onclick="toggleSection('certifications')">Certifications</a>
     <a href="#skills" onclick="toggleSection('skills')">Skills</a>
     <a href="#education" onclick="toggleSection('education')">Education</a>
   </nav>
@@ -41,62 +42,91 @@
     <section id="about" class="container about-section">
       <h2>About Me</h2>
       <p>
-        I’m an enthusiastic Data Scientist with 3+ years of hands-on experience in delivering impactful solutions across industry and academic research. My journey spans advanced work in LLM-driven data retrieval, zero-shot classification, and end-to-end analytics—from building scalable pipelines at Tata Consultancy Services to pioneering semantic search and automation for 100,000+ unstructured records as a Research Assistant at Lamar University.
-        <br><br>
-        I thrive on transforming complex data challenges into actionable insights, using tools like Python, SQL, and state-of-the-art machine learning frameworks. I love collaborating with diverse teams and empowering non-technical stakeholders through intuitive data solutions. My favorite moments are when curiosity meets innovation—whether that’s automating a repetitive workflow, visualizing results for business decisions, or testing the limits of AI-driven classification.
-        <br><br>
-        I’m excited about tackling new challenges and growing in roles where my passion for data science, statistical modeling, and problem-solving can make a real difference. Let’s connect if you’re seeking someone who brings not just technical expertise, but energy and genuine excitement to your team!
+       I am a passionate Data Scientist with 4+ years of hands-on experience spanning research, industry, and applied machine learning. My expertise covers the full spectrum of data science—from designing end-to-end NLP and predictive modeling pipelines to deploying robust data solutions for large-scale business and research challenges. I specialize in building practical AI systems using Python, scikit-learn, PyTorch, and modern ML frameworks, with proven success transforming unstructured data into actionable insights.
+      <br><br>
+      At Lamar University, I led the development of advanced information retrieval systems and LLM-driven analytics for maritime safety, automating workflows for 100,000+ incident records and helping non-technical users gain meaningful answers in seconds. Previously at Tata Consultancy Services, I delivered operational impact by automating data pipelines, mentoring analysts, and ensuring data reliability for enterprise clients. My research background also includes engineering NLP solutions for large text corpora, deploying ensemble models, and driving innovation in AI-powered document analysis.
+      <br><br>
+      I thrive on bridging technical depth with business needs—delivering clear, data-driven recommendations, and empowering diverse teams to leverage machine learning for measurable outcomes. I’m deeply motivated by continuous learning and believe in the value of collaborative, ethical, and human-centered AI.
+      <br><br>
+      Let’s connect if you are looking for a data scientist who brings both technical expertise and a passion for building real-world impact with data.
       </p>  
       <div class="about-img">
-        <img src="images\Image 2.jpg" alt="Jyothi Supriya Chollangi">
+        <img src="images/Image 2.jpg" alt="Jyothi Supriya Chollangi">
       </div>
     </section>
 
-    <!-- Experience Section (Accordion) -->
+    <!-- Experience Section -->
     <section id="experience" class="container collapsible closed">
       <button class="collapsible-header pastel-blue" onclick="toggleSection('experience')">
         <i class="fas fa-briefcase"></i> Professional Experience <span class="toggle-arrow"></span>
       </button>
       <div class="collapsible-content">
         <div class="job">
-          <h3>Research Assistant, Lamar University – Beaumont, TX <span class="job-date">Jan 2024 - May 2025</span></h3>
+          <h3>Research Assistant, Lamar University – Beaumont, TX <span class="job-date">Jan 2024 – May 2025</span></h3>
           <ul>
-            <li>Collaborated with Dr. Curry’s Industrial Engineering team to architect and implement an LLM-powered information retrieval system for 100,000+ unstructured U.S. maritime incident reports.</li>
-            <li>Reduced query turnaround from hours to seconds and cut manual lookup effort by 70% by engineering a RAG pipeline: converted Excel data into a SQLite database, authored zero-shot prompts to translate natural-language queries into validated SQL using locally hosted models, and automated result summarization.</li>
-            <li>Achieved 92% precision in internal benchmarks by developing a LangChain semantic-search agent with HuggingFace embeddings and ChromaDB, and building custom tools for file overview, similarity retrieval, and summarization.</li>
-            <li>Empowered non-technical stakeholders to query and download summaries through a Gradio app with multi-format ingestion (XLSX, CSV, PDF, DOCX, TXT), OCR/text extraction, and vector indexing.</li>
+            <li>Designed and implemented an information retrieval system for the maritime industry using LangChain, OpenAI, and ChromaDB to automate access to 100,000+ near-miss incident records.</li>
+            <li>Enabled non-technical stakeholders to efficiently query and summarize large datasets, reducing manual data retrieval effort by 60% and accelerating decision-making.</li>
+            <li>Annotated and validated 6,000+ LLM outputs for a peer-reviewed study on maritime near-miss data, ensuring data quality and advancing AI-driven safety analytics.</li>
+            <li>Built a multi-format ingestion pipeline using Gradio, enabling natural language queries and report generation; conducted A/B testing on UI variants, achieving a 25% increase in query success rates.</li>
           </ul>
         </div>
         <div class="job">
-          <h3>Data Analyst, Tata Consultancy Services – Hyderabad, India <span class="job-date">Mar 2021 – Sep 2023</span></h3>
+          <h3>Data Analyst, Tata Consultancy Services (TCS) – Hyderabad, India <span class="job-date">Mar 2021 – Sep 2023</span></h3>
           <ul>
-            <li>Managed and resolved over 150 data‐related incidents and service requests per month via ServiceNow, consistently meeting SLA targets 95% of the time.</li>
-            <li>Authored and optimized complex SQL queries for data extraction and transformation, reducing average query runtime by 30% and accelerating downstream analytics workflows.</li>
-            <li>Automated reporting with advanced Excel (pivot tables, VLOOKUP, etc.), delivering weekly dashboards that improved SLA compliance metrics by 15% and enabled faster decision‐making.</li>
-            <li>Troubleshot and supported internal teams on data‐integrity issues and validated SOAP/REST APIs with SoapUI—diagnosing anomalies, implementing corrective actions, and reducing API errors by 40%—while crafting clear charts and presentations that empowered stakeholders and enhanced overall data accuracy by 25%.</li>
+            <li>Resolved 150+ monthly data incidents using SQL, ensuring timely data availability for end users; consistently achieved 95%+ SLA compliance and reduced pipeline runtime by 30% through query optimization, while collaborating with technical and non-technical stakeholders.</li>
+            <li>Automated reporting workflows with Excel and Power BI, delivering dashboards that reduced manual reporting time by 40% and improved SLA compliance by 15% and mentored 3 junior analysts on SQL optimization and data visualization best practices, improving team productivity by 25%.</li>
+            <li>Monitored critical system performance and uptime using Datadog dashboards, proactively identified and escalated anomalies, and maintained 99% service availability while reducing incident response time by 20% through effective communication with engineering teams.</li>
+          </ul>
+        </div>
+        <div class="job">
+          <h3>Data Science Researcher, Caturiya Research Labs Private Limited <span class="job-date">July 2019 – Feb 2021</span></h3>
+          <ul>
+            <li>Collaborated in a cross-functional team of 5 to develop an NLP pipeline for 10,000+ interview transcripts, implementing clustering algorithms (K-means, DBSCAN) to identify 12 cognitive archetypes with 85% inter-annotator agreement, supporting personalized learning research.</li>
+            <li>Engineered ensemble models (Random Forest, XGBoost) for thinking pattern classification (79% accuracy), automating feature extraction and decreasing manual analysis effort by 75%.</li>
+            <li>Designed and implemented an anomaly detection framework using Isolation Forest and ARIMA with senior researchers, uncovering 8% unique cognitive patterns through temporal analysis of engagement metrics.</li>
+            <li>Supported data collection and preprocessing for Bayesian network construction across 15 demographic variables, discovering 20+ belief dependencies and developing technical documentation to onboard new team members.</li>
+            <li>Developed a collaborative filtering prototype using matrix factorization (SVD), achieving 72% recommendation accuracy in pilot tests and translating research papers into deployable solutions with mentorship on code optimization.</li>
           </ul>
         </div>
       </div>
     </section>
 
-    <!-- Projects Section (Accordion) -->
+    <!-- Projects Section -->
     <section id="projects" class="container collapsible closed">
       <button class="collapsible-header pastel-pink" onclick="toggleSection('projects')">
-        <i class="fas fa-lightbulb"></i> Academic Projects <span class="toggle-arrow"></span>
+        <i class="fas fa-lightbulb"></i> Projects <span class="toggle-arrow"></span>
       </button>
       <div class="collapsible-content">
         <div class="project">
-          <h3>Thesis Project: Maritime Safety Classification Using Large Language Models</h3>
+          <h3>Thesis - Maritime Safety Classification Using LLMs <span class="job-date">Aug 2023 – May 2025</span></h3>
           <ul>
-            <li>Developed a zero-shot text-classification framework in Python & Ollama CLI, processing 100 sampled near-miss narratives across 50 safety topics (5,000 decisions) and reducing manual annotation effort by 70%.</li>
-            <li>Engineered end-to-end data pipelines with pandas & Hugging Face Transformers: invoked nine locally hosted LLMs three times per record, parsed outputs into standardized Yes/No labels, and managed storage for downstream analysis.</li>
-            <li>Performed statistical benchmarking (confusion matrices, precision/recall, F₁, Cohen’s κ, McNemar’s) to identify LLaMA 70B (κ = 0.625, F₁ = 0.81) as top performer, visualized results with Matplotlib, and partnered with Dr. Curry to align analyses with maritime safety standards for future LLM fine-tuning.</li>
+            <li>Developed a large-scale zero-shot classification pipeline to evaluate nine locally hosted Large Language Models (LLMs) on 100,000+ maritime incident narratives.</li>
+            <li>Benchmarked each LLM’s output against human-annotated labels, systematically comparing accuracy and model alignment for real-world safety-critical data.</li>
+            <li>Applied advanced evaluation metrics—including confusion matrices, F1 score, precision, recall, Cohen’s Kappa, and McNemar’s Test—to rigorously assess model performance and reliability.</li>
+            <li>Delivered data-driven recommendations highlighting significant performance variations across models, emphasizing the need for thorough evaluation prior to deploying LLMs in safety-critical applications.</li>
+          </ul>
+        </div>
+        <div class="project">
+          <h3>Customer Churn Prediction System</h3>
+          <ul>
+            <li>Developed end-to-end machine learning pipeline using Python, Scikit-learn, and XGBoost to predict customer churn with 85%+ accuracy, analyzing 7,000+ telecom customer records and implementing advanced feature engineering techniques to transform 21 raw variables into 60+ predictive features.</li>
+            <li>Built and deployed production-ready web application using Streamlit Cloud with real-time prediction capabilities, enabling stakeholders to input customer data and receive instant churn probability assessments along with tailored business recommendations for customer retention strategies.</li>
+            <li>Optimized model performance through comprehensive evaluation of 3 machine learning algorithms (Random Forest, XGBoost, Logistic Regression) using 5-fold cross-validation, achieving 0.87+ AUC score and delivering quantifiable business impact by identifying high-risk customers representing 26% of potential revenue loss.</li>
+            <li>Live Demo: <a href="https://jyothi-customer-churn-prediction.streamlit.app/" target="_blank">View Project</a></li>
+          </ul>
+        </div>
+        <div class="project">
+          <h3>JyoQuery - AI-Powered Document Analysis System</h3>
+          <ul>
+            <li>Engineered a full-stack document analysis web application using Python, Streamlit, and Groq API, implementing RAG (Retrieval Augmented Generation) pipeline to process multiple file formats (PDF, Word, Excel, Images) and deliver AI-powered question-answering capabilities with 90%+ text extraction accuracy.</li>
+            <li>Developed robust document processing architecture with error handling, fallback mechanisms, and vector search functionality, utilizing PyPDF2, pandas, numpy and custom algorithms to handle 6+ file types while maintaining sub-3-second query response times and seamless user experience.</li>
+            <li>Deployed production-ready application to Streamlit Cloud with GitHub CI/CD integration, implementing persistent storage, session management, and responsive UI design that demonstrates end-to-end software development lifecycle from conception to live deployment.</li>
           </ul>
         </div>
       </div>
     </section>
 
-    <!-- Publications Section (Accordion) -->
+    <!-- Publications Section -->
     <section id="publications" class="container collapsible closed">
       <button class="collapsible-header pastel-green" onclick="toggleSection('publications')">
         <i class="fas fa-book"></i> Publications <span class="toggle-arrow"></span>
@@ -108,11 +138,30 @@
             <em>A Topic Modeling Comparison Between LDA, NMF, Top2Vec and BERTopic in Determining the Contributing Factors for Pipeline Incidents.</em> 
             Safety Science. (Manuscript under review).
           </li>
+          <li>
+            <strong>Multi-model NLP Framework for Pipeline Incident Analysis</strong><br>
+            Co-authored a research paper (under review, Safety Science Journal, 2025) comparing advanced NLP models—LDA, NMF, BERTopic, and Top2Vec—to extract actionable themes and operational insights from pipeline incident reports.<br>
+            Developed and validated hybrid NLP framework that integrates both granular (NMF, BERTopic) and broad (LDA, Top2Vec) topic modeling techniques, enabling comprehensive incident analysis, and supporting proactive safety management.
+          </li>
         </ul>
       </div>
     </section>
 
-    <!-- Skills Section with Icons (Accordion) -->
+    <!-- Certifications Section -->
+    <section id="certifications" class="container collapsible closed">
+      <button class="collapsible-header pastel-cyan" onclick="toggleSection('certifications')">
+        <i class="fas fa-certificate"></i> Certifications <span class="toggle-arrow"></span>
+      </button>
+      <div class="collapsible-content">
+        <ul>
+          <li>IBM Data Science Professional Certificate</li>
+          <li>Microsoft Azure AI Essentials Professional Certificate</li>
+          <li>AWS Certified Machine Learning Engineer – Associate</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
     <section id="skills" class="container collapsible closed">
       <button class="collapsible-header pastel-purple" onclick="toggleSection('skills')">
         <i class="fas fa-laptop-code"></i> Skills <span class="toggle-arrow"></span>
@@ -128,11 +177,17 @@
         <div class="skill-card pastel-purple"><i class="fas fa-cloud"></i> AWS</div>
         <div class="skill-card pastel-blue"><i class="fab fa-docker"></i> Docker</div>
         <div class="skill-card pastel-pink"><i class="fas fa-brain"></i> Deep Learning</div>
-        <!-- Add more skills if you want -->
+        <div class="skill-card pastel-green"><i class="fas fa-brain"></i> NLP & LLMs</div>
+        <div class="skill-card pastel-cyan"><i class="fas fa-cloud"></i> Azure, GCP</div>
+        <div class="skill-card pastel-purple"><i class="fas fa-vial"></i> MLOps</div>
+        <div class="skill-card pastel-orange"><i class="fas fa-chart-bar"></i> Tableau, Power BI</div>
+        <div class="skill-card pastel-blue"><i class="fas fa-cogs"></i> PySpark</div>
+        <div class="skill-card pastel-green"><i class="fas fa-flask"></i> Hypothesis & A/B Testing</div>
+        <div class="skill-card pastel-purple"><i class="fas fa-brain"></i> Generative AI</div>
       </div>
     </section>
 
-    <!-- Education Section (Accordion) -->
+    <!-- Education Section -->
     <section id="education" class="container collapsible closed">
       <button class="collapsible-header pastel-orange" onclick="toggleSection('education')">
         <i class="fas fa-graduation-cap"></i> Education <span class="toggle-arrow"></span>
@@ -140,12 +195,12 @@
       <div class="collapsible-content">
         <ul>
           <li>
-            <strong>Master of Science in Industrial Engineering</strong>, Lamar University, Beaumont, TX &mdash; GPA: 4/4 <br/>
-            <span class="edu-date">May 2025</span>
+            <strong>Master of Engineering Science, Industrial Engineering</strong>, Lamar University, Beaumont, TX — GPA: 4.0/4.0 <br/>
+            <span class="edu-date">Aug 2023 – May 2025</span>
           </li>
           <li>
-            <strong>Bachelor’s in Computer Science Engineering</strong>, Aditya College of Engineering, India &mdash; PER: 70% <br/>
-            <span class="edu-date">May 2019</span>
+            <strong>Bachelor of Technology, Computer Science Engineering</strong>, Aditya University, Andhra Pradesh, India — GPA: 3.2/4.0 <br/>
+            <span class="edu-date">June 2015 – May 2019</span>
           </li>
         </ul>
       </div>
